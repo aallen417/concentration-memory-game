@@ -6,8 +6,13 @@ body {
 .easy-board {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .empty-card-placeholder {
+    width: 100px;
+    aspect-ratio: 1/1.5;
+    border: 3px solid #41463D;
+    
     
 }
