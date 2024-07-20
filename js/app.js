@@ -3,7 +3,10 @@
 
 
 /*---------------------------- Variables (state) ----------------------------*/
-
+let board
+let deck
+let score
+let win
 
 
 /*------------------------ Cached Element References ------------------------*/
