@@ -1,3 +1,13 @@
 body {
-    background-color: blue;
+    background-color: darkgrey;
+    font-family: system-ui, sans-serif;
+}
+
+.easy-board {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.empty-card-placeholder {
+    
 }
