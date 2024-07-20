@@ -10,6 +10,8 @@ let win
 
 
 /*------------------------ Cached Element References ------------------------*/
+const cardPlaceholder = document.querySelectorAll(".empty-card-placeholder")
+const currentScore = document.getElementById("score")
 
 
 
