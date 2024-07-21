@@ -6,7 +6,20 @@ body {
     justify-content: center;
     align-items: center;
     height: 800px;
-    gap: 40px
+    gap: 25px;
+    margin: 10px;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin: 4px;
+}
+
+#current-score {
+    margin-bottom: 40px;
 }
 
 .easy-board { 
