@@ -1,18 +1,26 @@
 body {
     background-color: darkgrey;
     font-family: system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    gap: 40px
 }
 
-.easy-board {
+.easy-board { 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+    justify-content: center;
+    height: 500px;
+    width: 620px;
+    gap: 60px;
+    }
 
 .empty-card-placeholder {
     width: 100px;
-    aspect-ratio: 1/1.5;
-    border: 3px solid #41463D;
-    
-    
+    height: 125px;
+    ;
+    border: 1px solid #41463D;
 }
