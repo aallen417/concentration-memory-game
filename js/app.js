@@ -11,7 +11,7 @@ let win
 
 /*------------------------ Cached Element References ------------------------*/
 const cardPlaceholderEl = document.querySelectorAll(".empty-card-placeholder")
-const currentScoreEl = document.getElementById("score")
+const currentScoreEl = document.getElementById("current-score")
 
 
 
@@ -21,7 +21,7 @@ easyDiffInit()
 function easyDiffInit() {
     board = ["", "", "", "", "", "", "", "", "", "", "", "" ]
     // deck = easyDeck
-    score = 0
+    currentScoreEl.textContent = 0 
     win = false
     render()
 }
