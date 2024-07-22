@@ -35,7 +35,13 @@ function easyDiffInit() {
     render()   
 }
 
+function compare(card, idx) {
+    let selectedCard1 = gameDeck[idx]
+    let selectedCard2 = gameDeck[idx]
+    if (selectedCard1 !== handleCardClick()) {
 
+    }
+}
 
 function shuffleDeck() {
     while (sortedDeck.length > 0) {
@@ -46,9 +52,27 @@ function shuffleDeck() {
         }
 }
 
+
+    
+
+
 function handleCardClick(cardEl, idx) {
     console.log("clicked")
     cardEl.className = `${"card large"} + ${gameDeck[cardEl.id]}`
+    if (turn === 1) {
+        selectedCard1 = gameDeck[cardEl.id]
+        turn = 2
+    }   else {
+        selectedCard2 = gameDeck[cardEl.id]    
+        turn = 1
+    }
+    
+ 
+        
+    
+   
+    console.log(selectedCard1)
+    console.log(selectedCard2)
 }
 
 function render() {
@@ -60,5 +84,4 @@ function render() {
 cardEls.forEach((cardEl) => {
     cardEl.addEventListener("click", event => {handleCardClick(cardEl)})
 })
-
 
