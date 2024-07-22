@@ -1,0 +1,82 @@
+@charset "UTF-8";
+.card {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 5px 5px 50px 5px;
+  cursor: pointer;
+  /* Set the card's dimensions, and size it relative to
+     it's font size. */
+  font-size: inherit;
+  width: 4.0em;
+  height: 5.5em;
+  /* Add a default background color and border. */
+  background-color: #fff;
+  border-radius: 0.20em;
+  border: 1px solid #c3c3c3;
+  /* Scale and set the background settings. */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  /* "Hide" any text within the element (use text to be
+     simply compliant with screen readers, etc.). */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  /* Default sizes for cards (size based off the font). */
+  /* Optional styles for cards: borderless and drop shadow. */
+  /* Not a card, but a card-shaped outline to represent a
+     droppable place, like an empty pile. */ }
+  .card.small {
+    font-size: 12px; }
+  .card.large {
+    font-size: 26px; }
+  .card.xlarge {
+    font-size: 42px; }
+  .card.no-border {
+    border: 0; }
+  .card.shadow {
+    box-shadow: 2px 2px 3px 0 rgba(41, 41, 41, 0.75); }
+  .card.outline {
+    background-image: none;
+    background-color: rgba(195, 195, 195, 0.5);
+    border: 0.15em dashed #daa520; }
+
+.card.hero.mercy,
+.card.hM,
+.card.m {
+    background-image: url("../images/overwatchDeck/cardFront/Mercy.png");
+}
+
+.card.hero.pharah,
+.card.hP,
+.card.p {
+    background-image: url("../images/overwatchDeck/cardFront/Pharah.png");
+}
+
+.card.hero.reinhardt,
+.card.hR,
+.card.r {
+    background-image: url("../images/overwatchDeck/cardFront/Reinhardt.png");
+}
+
+.card.hero.soldier76,
+.card.hS,
+.card.s {
+    background-image: url("../images/overwatchDeck/cardFront/Soldier76.png");
+}
+
+.card.hero.tracer,
+.card.hT,
+.card.t {
+    background-image: url("../images/overwatchDeck/cardFront/Tracer.png");
+}
+
+.card.hero.widowmaker,
+.card.hW,
+.card.w {
+    background-image: url("../images/overwatchDeck/cardFront/Widowmaker.png");
+}
+
+.card.back-easy {
+    background-image: url("../images/overwatchDeck/cardBack/overwatchCardBack1.jpg");
+}
