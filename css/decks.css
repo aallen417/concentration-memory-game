@@ -44,39 +44,39 @@
 .card.hero.mercy,
 .card.hM,
 .card.m {
-    background-image: url("../images/overwatchDeck/cardFront/Mercy.png");
+    background-image: url("../images/cardFront/Mercy.png");
 }
 
 .card.hero.pharah,
 .card.hP,
 .card.p {
-    background-image: url("../images/overwatchDeck/cardFront/Pharah.png");
+    background-image: url("../images/cardFront/Pharah.png");
 }
 
 .card.hero.reinhardt,
 .card.hR,
 .card.r {
-    background-image: url("../images/overwatchDeck/cardFront/Reinhardt.png");
+    background-image: url("../images/cardFront/Reinhardt.png");
 }
 
 .card.hero.soldier76,
 .card.hS,
 .card.s {
-    background-image: url("../images/overwatchDeck/cardFront/Soldier76.png");
+    background-image: url("../images/cardFront/Soldier76.png");
 }
 
 .card.hero.tracer,
 .card.hT,
 .card.t {
-    background-image: url("../images/overwatchDeck/cardFront/Tracer.png");
+    background-image: url("../images/cardFront/Tracer.png");
 }
 
 .card.hero.widowmaker,
 .card.hW,
 .card.w {
-    background-image: url("../images/overwatchDeck/cardFront/Widowmaker.png");
+    background-image: url("../images/cardFront/Widowmaker.png");
 }
 
 .card.back-easy {
-    background-image: url("../images/overwatchDeck/cardBack/overwatchCardBack1.jpg");
+    background-image: url("../images/cardBack/overwatchCardBack1.jpg");
 }

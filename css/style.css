@@ -22,18 +22,11 @@ h2 {
     margin-bottom: 40px;
 }
 
-.easy-board { 
+.card-board { 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     height: 500px;
     width: 620px;
-    gap: 60px;
+    gap: 30px;
     }
-
-.empty-card-placeholder {
-    width: 100px;
-    height: 125px;
-    ;
-    border: 1px solid #41463D;
-}
