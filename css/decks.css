@@ -16,7 +16,7 @@
   /* Scale and set the background settings. */
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
   /* "Hide" any text within the element (use text to be
      simply compliant with screen readers, etc.). */
   text-indent: 100%;
@@ -78,5 +78,5 @@
 }
 
 .card.back-easy {
-    background-image: url("../images/cardBack/overwatchCardBack1.jpg");
+    background-image: url("../images/cardBack/overwatchCardBack3.png");
 }
