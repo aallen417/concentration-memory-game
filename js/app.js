@@ -17,7 +17,7 @@ let selectedCard2
 
 /*------------------------ Cached Element References ------------------------*/
 const cardEls = document.querySelectorAll(".card")
-const currentScoreEl = document.getElementById("current-score")
+const currentScoreEl = document.getElementById("score")
 
 /*-------------------------------- Functions --------------------------------*/
 easyDiffInit()
@@ -25,7 +25,8 @@ easyDiffInit()
 
 function easyDiffInit() {
     gameDeck = []
-    currentScoreEl.textContent = 0 
+    score = 0
+    currentScoreEl.textContent = "Score: " + score
     win = false
     turn = 1
     cardEls.forEach((cardEl) =>  {
@@ -35,13 +36,9 @@ function easyDiffInit() {
     render()   
 }
 
-function compare(card, idx) {
-    let selectedCard1 = gameDeck[idx]
-    let selectedCard2 = gameDeck[idx]
-    if (selectedCard1 !== handleCardClick()) {
 
-    }
-}
+
+
 
 function shuffleDeck() {
     while (sortedDeck.length > 0) {
@@ -52,31 +49,41 @@ function shuffleDeck() {
         }
 }
 
-
-    
-
-
-function handleCardClick(cardEl, idx) {
+function handleCardClick(cardEl) {
     console.log("clicked")
     cardEl.className = `${"card large"} + ${gameDeck[cardEl.id]}`
     if (turn === 1) {
-        selectedCard1 = gameDeck[cardEl.id]
+        selectedCard1 = cardEl
         turn = 2
     }   else {
-        selectedCard2 = gameDeck[cardEl.id]    
+        selectedCard2 = cardEl    
+        compare(selectedCard1, selectedCard2)
         turn = 1
-    }
-    
- 
-        
-    
+    }   
    
     console.log(selectedCard1)
     console.log(selectedCard2)
+
+        
 }
 
+function compare(selectedCard1, selectedCard2) {
+    if (gameDeck[selectedCard2.id] !== gameDeck[selectedCard1.id]) {
+        selectedCard1.className = "card large back-easy"
+        selectedCard2.className = "card large back-easy"
+        console.log("not a match")
+    }   else {
+            score += 5
+            console.log("Is a match")
+            render()
+    }
+        console.log(selectedCard1)
+        console.log(selectedCard2)
+}
+
+
 function render() {
-    
+    currentScoreEl.textContent = "Score: " + score
         }
 
 
