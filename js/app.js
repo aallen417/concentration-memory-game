@@ -84,9 +84,19 @@ function compare(selectedCard1, selectedCard2) {
         console.log(selectedCard2)
 }
 
+
+function checkForVictory() {
+   if (score === 30) {
+    win = true
+   } else {
+    return
+   }
+}
+
 function render() {
     currentScoreEl.textContent = "Score: " + score
     currentLivesEl.textContent = "Lives: " + lives
+    checkForVictory()
         }
 
 
