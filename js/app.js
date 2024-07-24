@@ -7,6 +7,7 @@ let deck
 let card
 let turn
 let score
+let lives
 let win
 
 
@@ -18,7 +19,7 @@ let selectedCard2
 /*------------------------ Cached Element References ------------------------*/
 const cardEls = document.querySelectorAll(".card")
 const currentScoreEl = document.getElementById("score")
-
+const currentLivesEl = document.getElementById("lives")
 /*-------------------------------- Functions --------------------------------*/
 easyDiffInit()
 
@@ -26,7 +27,7 @@ easyDiffInit()
 function easyDiffInit() {
     gameDeck = []
     score = 0
-    currentScoreEl.textContent = "Score: " + score
+    lives = 5
     win = false
     turn = 1
     cardEls.forEach((cardEl) =>  {
@@ -69,9 +70,11 @@ function handleCardClick(cardEl) {
 
 function compare(selectedCard1, selectedCard2) {
     if (gameDeck[selectedCard2.id] !== gameDeck[selectedCard1.id]) {
+        lives -= 1
         selectedCard1.className = "card large back-easy"
         selectedCard2.className = "card large back-easy"
         console.log("not a match")
+        render()
     }   else {
             score += 5
             console.log("Is a match")
@@ -81,9 +84,9 @@ function compare(selectedCard1, selectedCard2) {
         console.log(selectedCard2)
 }
 
-
 function render() {
     currentScoreEl.textContent = "Score: " + score
+    currentLivesEl.textContent = "Lives: " + lives
         }
 
 
@@ -91,4 +94,3 @@ function render() {
 cardEls.forEach((cardEl) => {
     cardEl.addEventListener("click", event => {handleCardClick(cardEl)})
 })
-
