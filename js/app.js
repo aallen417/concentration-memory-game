@@ -39,7 +39,6 @@ function shuffleDeck() {
         let randomIdx = Math.floor(Math.random() * sortedDeck.length)
         let randomCard = sortedDeck.splice(randomIdx, 1)[0]
         gameDeck.push(randomCard)
-        console.log(gameDeck)
     }
 }
 
@@ -60,6 +59,7 @@ function handleCardClick(cardEl) {
         compare(selectedCard1, selectedCard2)
         turn = 1
     }
+    
     checkForVictory()   
     checkForDefeat()        
 }
@@ -73,6 +73,7 @@ function compare(selectedCard1, selectedCard2) {
     }   else {
             score += 5
             render()
+            return
         }        
 }
 
