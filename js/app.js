@@ -53,6 +53,9 @@ function shuffleDeck() {
 function handleCardClick(cardEl) {
     console.log("clicked")
     cardEl.className = `${"card large"} + ${gameDeck[cardEl.id]}`
+    if (win) {
+        return
+    }
     if (turn === 1) {
         selectedCard1 = cardEl
         turn = 2
@@ -60,7 +63,8 @@ function handleCardClick(cardEl) {
         selectedCard2 = cardEl    
         compare(selectedCard1, selectedCard2)
         turn = 1
-    }   
+    }
+    checkForVictory()   
    
     console.log(selectedCard1)
     console.log(selectedCard2)
@@ -96,11 +100,11 @@ function checkForVictory() {
 function render() {
     currentScoreEl.textContent = "Score: " + score
     currentLivesEl.textContent = "Lives: " + lives
-    checkForVictory()
-        }
+    }
 
 
 /*----------------------------- Event Listeners -----------------------------*/
 cardEls.forEach((cardEl) => {
     cardEl.addEventListener("click", event => {handleCardClick(cardEl)})
+    
 })
