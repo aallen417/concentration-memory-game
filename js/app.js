@@ -1,18 +1,16 @@
 /*-------------------------------- Constants --------------------------------*/
-const sortedDeck = ["hM", "hP", "hR", "hS", "hT", "hW", "hM", "hP", "hR", "hS", "hT", "hW"]
+const deckOfSortedCards = ["hM", "hP", "hR", "hS", "hT", "hW", "hM", "hP", "hR", "hS", "hT", "hW"]
 
 /*---------------------------- Variables (state) ----------------------------*/
-let deck
 let card
 let turn
 let score
 let lives
 let win
 let defeat
-let gameDeck = []
+let deckOfGameCards = []
 let selectedCard1
 let selectedCard2
-
 /*------------------------ Cached Element References ------------------------*/
 const cardEls = document.querySelectorAll(".card")
 const currentScoreEl = document.getElementById("score")
@@ -21,7 +19,7 @@ const currentLivesEl = document.getElementById("lives")
 easyDiffInit()
 
 function easyDiffInit() {
-    gameDeck = []
+    deckOfGameCards = []
     score = 0
     lives = 5
     win = false
@@ -35,16 +33,16 @@ function easyDiffInit() {
 }
 
 function shuffleDeck() {
-    while (sortedDeck.length > 0) {
-        let randomIdx = Math.floor(Math.random() * sortedDeck.length)
-        let randomCard = sortedDeck.splice(randomIdx, 1)[0]
-        gameDeck.push(randomCard)
+    while (deckOfSortedCards.length > 0) {
+        let randomIdx = Math.floor(Math.random() * deckOfSortedCards.length)
+        let randomCard = deckOfSortedCards.splice(randomIdx, 1)[0]
+        deckOfGameCards.push(randomCard)
     }
 }
 
 function handleCardClick(cardEl) {
     console.log("clicked")
-    cardEl.className = `${"card large"} + ${gameDeck[cardEl.id]}`
+    cardEl.className = `${"card large"} + ${deckOfGameCards[cardEl.id]}`
     if (win) {
         return
     }
@@ -58,23 +56,22 @@ function handleCardClick(cardEl) {
         selectedCard2 = cardEl    
         compare(selectedCard1, selectedCard2)
         turn = 1
-    }
-    
+    }    
     checkForVictory()   
     checkForDefeat()        
 }
 
 function compare(selectedCard1, selectedCard2) {
-    if (gameDeck[selectedCard2.id] !== gameDeck[selectedCard1.id]) {
+    if (deckOfGameCards[selectedCard2.id] !== deckOfGameCards[selectedCard1.id]) {
         lives -= 1
         setTimeout(() => selectedCard1.className = "card large back-easy", 2500)
         setTimeout(() => selectedCard2.className = "card large back-easy", 2500)        
         render()
-    }   else {
-            score += 5
-            render()
-            return
-        }        
+    }   
+    if (deckOfGameCards[selectedCard2.id] === deckOfGameCards[selectedCard1.id]) {
+        score += 5
+        render()
+    }        
 }
 
 function checkForVictory() {
@@ -100,6 +97,5 @@ function render() {
 
 /*----------------------------- Event Listeners -----------------------------*/
 cardEls.forEach((cardEl) => {
-    cardEl.addEventListener("click", event => {handleCardClick(cardEl)})
-    
+    cardEl.addEventListener("click", event => {handleCardClick(cardEl)})    
 })
