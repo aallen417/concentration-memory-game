@@ -71,8 +71,8 @@ function handleCardClick(cardEl) {
 function compare(selectedCard1, selectedCard2) {
     if (gameDeck[selectedCard2.id] !== gameDeck[selectedCard1.id]) {
         lives -= 1
-        selectedCard1.className = "card large back-easy"
-        selectedCard2.className = "card large back-easy"
+        setTimeout(() => selectedCard1.className = "card large back-easy", 2500)
+        setTimeout(() => selectedCard2.className = "card large back-easy", 2500)
         console.log("not a match")
         render()
     }   else {
