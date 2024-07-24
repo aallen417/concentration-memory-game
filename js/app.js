@@ -9,6 +9,7 @@ let turn
 let score
 let lives
 let win
+let defeat
 
 
 let gameDeck = []
@@ -29,6 +30,7 @@ function easyDiffInit() {
     score = 0
     lives = 5
     win = false
+    defeat = false
     turn = 1
     cardEls.forEach((cardEl) =>  {
     cardEl.className = "card large back-easy"
@@ -56,6 +58,9 @@ function handleCardClick(cardEl) {
     if (win) {
         return
     }
+    if (defeat) {
+        return
+    }
     if (turn === 1) {
         selectedCard1 = cardEl
         turn = 2
@@ -65,7 +70,7 @@ function handleCardClick(cardEl) {
         turn = 1
     }
     checkForVictory()   
-   
+    checkForDefeat()
     console.log(selectedCard1)
     console.log(selectedCard2)
 
@@ -95,6 +100,14 @@ function checkForVictory() {
    } else {
     return
    }
+}
+
+function checkForDefeat() {
+    if (lives === 0) {
+    defeat = true
+    }   else {
+        return
+    }
 }
 
 function render() {
