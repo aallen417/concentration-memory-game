@@ -46,17 +46,16 @@ function handleCardClick(cardEl) {
     if (cantClick === true) {
         return
     }
+    if (defeat === true) {
+        return
+    }
+    if (win === true) {
+        return
+    }
     if (cardEl.className !== "card large back-easy") {
         return
     }
-    console.log("clicked")
     cardEl.className = `${"card large"} + ${deckOfGameCards[cardEl.id]}`    
-    if (win) {
-        return
-    }
-    if (defeat) {
-        return
-    }
     if (turn === 1) {
         selectedCard1 = cardEl
         turn = 2
@@ -72,8 +71,8 @@ function handleCardClick(cardEl) {
 function compare(selectedCard1, selectedCard2) {
     if (deckOfGameCards[selectedCard2.id] !== deckOfGameCards[selectedCard1.id]) {
         cantClick = true
-        setTimeout(() => cantClick = false, 2500)
         lives -= 1
+        setTimeout(() => cantClick = false, 2500)
         setTimeout(() => selectedCard1.className = "card large back-easy", 2500)
         setTimeout(() => selectedCard2.className = "card large back-easy", 2500)        
         render()
