@@ -1,7 +1,7 @@
 /*-------------------------------- Constants --------------------------------*/
 const deckOfSortedCards = ["hM", "hP", "hR", "hS", "hT", "hW", "hM", "hP", "hR", "hS", "hT", "hW"]
-const defeatSound = new Audio("../assets/sounds/defeat.mp3")
-const victorySound = new Audio("../assets/sounds/victory.mp3")
+const defeatSound = new Audio("../concentration-memory-game/assets/sounds/defeat.mp3")
+const victorySound = new Audio("../concentration-memory-game/assets/sounds/victory.mp3")
 /*---------------------------- Variables (state) ----------------------------*/
 let cantClick = false
 let turn
