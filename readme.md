@@ -24,7 +24,7 @@
 
 * ### [Pseudocode](https://docs.google.com/document/d/1DyPL6mEXw6C_zFAIIFVZbJvddkCSplMSBNN0b_4Guy0/edit)
 
-## Attributes:
+## Attributions:
 
 * #### [Favicon](https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Overwatch_circle_logo.svg/600px-Overwatch_circle_logo.svg.png)
 * #### [MEMORYWATCH background image](https://wallpapers.com/images/hd/best-overwatch-background-2560-x-1440-hwnui2e8f9nf777f.jpg)
