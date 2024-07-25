@@ -96,12 +96,13 @@ function compare(selectedCard1, selectedCard2) {
 }
 
 function checkForVictory() {
-   if (score === 30) {
-    win = true
-    victorySound.play()
-   } else {
+    if (score === 30) {
+        win = true
+        victorySound.play()
+        confetti.start(2000)
+    } else {
     return
-   }
+    }
 }
 
 function checkForDefeat() {
