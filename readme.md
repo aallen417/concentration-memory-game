@@ -18,7 +18,9 @@
 
 
 
-## [Play my game!](https://aallen417.github.io/concentration-memory-game/) 
+# **[Play my game!](https://aallen417.github.io/concentration-memory-game/)**
+
+## Attributes:
 
 * #### [MEMORYWATCH background image](https://wallpapers.com/images/hd/best-overwatch-background-2560-x-1440-hwnui2e8f9nf777f.jpg)
 * #### [Back of card background image](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/40dc7f18-cc08-4f2c-ad67-643cec238f62/dcs0kk6-c6fc8bfc-d0f4-4c0f-8d4b-7ea96e9e585d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQwZGM3ZjE4LWNjMDgtNGYyYy1hZDY3LTY0M2NlYzIzOGY2MlwvZGNzMGtrNi1jNmZjOGJmYy1kMGY0LTRjMGYtOGQ0Yi03ZWE5NmU5ZTU4NWQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ZJttbsm2N6qokJ6SqcXQnAkKmnvW2TtOfPF6IP6F5ao)
