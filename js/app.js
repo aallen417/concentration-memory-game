@@ -1,5 +1,7 @@
 /*-------------------------------- Constants --------------------------------*/
 const deckOfSortedCards = ["hM", "hP", "hR", "hS", "hT", "hW", "hM", "hP", "hR", "hS", "hT", "hW"]
+const defeatSound = new Audio("../sounds/defeat.mp3")
+const victorySound = new Audio("../sounds/victory.mp3")
 /*---------------------------- Variables (state) ----------------------------*/
 let cantClick = false
 let turn
@@ -96,6 +98,7 @@ function compare(selectedCard1, selectedCard2) {
 function checkForVictory() {
    if (score === 30) {
     win = true
+    victorySound.play()
    } else {
     return
    }
@@ -104,6 +107,7 @@ function checkForVictory() {
 function checkForDefeat() {
     if (lives === 0) {
     defeat = true
+    defeatSound.play()
     }   else {
         return
     }
