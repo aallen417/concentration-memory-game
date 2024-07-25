@@ -5,7 +5,7 @@
 ## Objective:
 
 * ### *Match as many cards on the board as you can. Each match you make you earn 5 points. Match them all and earn 30 points!*
-* ### *You have 5 lives to begin. Each time your selected cards don't match you lose a life. If you reach 0 lives it is game over.*
+* ### *You have 7 lives to begin. Each time your selected cards don't match you lose a life. If you reach 0 lives it is game over.*
 
 ## How to play:
 

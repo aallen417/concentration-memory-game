@@ -25,7 +25,7 @@ function init() {
     newDeck = [...deckOfSortedCards]
     deckOfGameCards = []
     score = 0
-    lives = 5
+    lives = 7
     win = false
     defeat = false
     turn = 1
