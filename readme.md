@@ -22,6 +22,7 @@
 
 ## Attributes:
 
+* #### [Favicon](https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Overwatch_circle_logo.svg/600px-Overwatch_circle_logo.svg.png)
 * #### [MEMORYWATCH background image](https://wallpapers.com/images/hd/best-overwatch-background-2560-x-1440-hwnui2e8f9nf777f.jpg)
 * #### [Back of card background image](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/40dc7f18-cc08-4f2c-ad67-643cec238f62/dcs0kk6-c6fc8bfc-d0f4-4c0f-8d4b-7ea96e9e585d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQwZGM3ZjE4LWNjMDgtNGYyYy1hZDY3LTY0M2NlYzIzOGY2MlwvZGNzMGtrNi1jNmZjOGJmYy1kMGY0LTRjMGYtOGQ0Yi03ZWE5NmU5ZTU4NWQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ZJttbsm2N6qokJ6SqcXQnAkKmnvW2TtOfPF6IP6F5ao)
 * #### [Mercy background image](https://d15f34w2p8l1cc.cloudfront.net/overwatch/2508ddd39a178d5f6ae993ab43eeb3e7961e5a54a9507e6ae347381193f28943.png)
