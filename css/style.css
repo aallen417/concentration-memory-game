@@ -14,19 +14,43 @@ body {
 
 h1 {
     font-family: "Comfortaa", sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
 }
 
 h2 {
     font-family: "Comfortaa", sans-serif;
-    font-size: 20px;
+    margin-bottom: 12px;
+    margin-top: 5px;
+    
+}
+
+h3 {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 18px;
+    font-weight: 900;
     display: flex;
     justify-content: space-between;
     width: 300px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
-#current-score {
-    margin-bottom: 40px;
+#score {
+    text-align: center;
+    padding-top: 12px;
+    height: 35px;
+    width: 100px;
+    background-color: rgba(155, 155, 155, 0.8);
+    border-radius: 4px;
+}
+
+#lives {
+    text-align: center;
+    padding-top: 12px;
+    height: 35px;
+    width: 100px;
+    background-color: rgba(155, 155, 155, 0.8);
+    border-radius: 4px;
 }
 
 .card-board { 
@@ -37,6 +61,7 @@ h2 {
     width: 620px;
     gap: 30px;
     background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
 }
 
 #reset {
