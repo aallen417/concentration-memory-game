@@ -34,6 +34,11 @@ function init() {
     render()   
 }
 
+function render() {
+    currentScoreEl.textContent = "Score: " + score
+    currentLivesEl.textContent = "Lives: " + lives
+    }
+    
 function shuffleDeck() {
     while (newDeck.length > 0) {
         let randomIdx = Math.floor(Math.random() * newDeck.length)
@@ -55,11 +60,14 @@ function handleCardClick(cardEl) {
     if (cardEl.className !== "card large back-easy") {
         return
     }
-    cardEl.className = `${"card large"} + ${deckOfGameCards[cardEl.id]}`    
+    setTimeout(() => cardEl.className = `${"card large"} + ${deckOfGameCards[cardEl.id]}`, 603)    
     if (turn === 1) {
+        cardEl.classList.add("animate__animated", "animate__flipOutY")
         selectedCard1 = cardEl
         turn = 2
     }   else {
+        cardEl.classList.add("animate__animated", "animate__flipOutY")
+
         selectedCard2 = cardEl    
         compare(selectedCard1, selectedCard2)
         turn = 1
@@ -73,8 +81,10 @@ function compare(selectedCard1, selectedCard2) {
         cantClick = true
         lives -= 1
         setTimeout(() => cantClick = false, 2500)
-        setTimeout(() => selectedCard1.className = "card large back-easy", 2500)
-        setTimeout(() => selectedCard2.className = "card large back-easy", 2500)        
+        setTimeout(() => selectedCard1.className = "card large back-easy", 2603)
+        setTimeout(() => selectedCard2.className = "card large back-easy", 2603)
+        setTimeout(() => selectedCard1.classList.add("animate__animated", "animate__flipOutY"), 2000)
+        setTimeout(() => selectedCard2.classList.add("animate__animated", "animate__flipOutY"), 2000)
         render()
     }   
     if (deckOfGameCards[selectedCard2.id] === deckOfGameCards[selectedCard1.id]) {
@@ -98,11 +108,6 @@ function checkForDefeat() {
         return
     }
 }
-
-function render() {
-    currentScoreEl.textContent = "Score: " + score
-    currentLivesEl.textContent = "Lives: " + lives
-    }
 /*----------------------------- Event Listeners -----------------------------*/
 cardEls.forEach((cardEl) => {
     cardEl.addEventListener("click", event => {handleCardClick(cardEl)})    
