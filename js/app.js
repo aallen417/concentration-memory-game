@@ -1,24 +1,26 @@
 /*-------------------------------- Constants --------------------------------*/
 const deckOfSortedCards = ["hM", "hP", "hR", "hS", "hT", "hW", "hM", "hP", "hR", "hS", "hT", "hW"]
-
 /*---------------------------- Variables (state) ----------------------------*/
-let card
+let cantClick = false
 let turn
 let score
 let lives
 let win
 let defeat
-let deckOfGameCards = []
 let selectedCard1
 let selectedCard2
+let deckOfGameCards = []
+let newDeck = []
 /*------------------------ Cached Element References ------------------------*/
 const cardEls = document.querySelectorAll(".card")
 const currentScoreEl = document.getElementById("score")
 const currentLivesEl = document.getElementById("lives")
+const resetButtonEl = document.getElementById("reset")
 /*-------------------------------- Functions --------------------------------*/
-easyDiffInit()
+init()
 
-function easyDiffInit() {
+function init() {
+    newDeck = [...deckOfSortedCards]
     deckOfGameCards = []
     score = 0
     lives = 5
@@ -33,16 +35,22 @@ function easyDiffInit() {
 }
 
 function shuffleDeck() {
-    while (deckOfSortedCards.length > 0) {
-        let randomIdx = Math.floor(Math.random() * deckOfSortedCards.length)
-        let randomCard = deckOfSortedCards.splice(randomIdx, 1)[0]
+    while (newDeck.length > 0) {
+        let randomIdx = Math.floor(Math.random() * newDeck.length)
+        let randomCard = newDeck.splice(randomIdx, 1)[0]
         deckOfGameCards.push(randomCard)
     }
 }
 
 function handleCardClick(cardEl) {
+    if (cantClick === true) {
+        return
+    }
+    if (cardEl.className !== "card large back-easy") {
+        return
+    }
     console.log("clicked")
-    cardEl.className = `${"card large"} + ${deckOfGameCards[cardEl.id]}`
+    cardEl.className = `${"card large"} + ${deckOfGameCards[cardEl.id]}`    
     if (win) {
         return
     }
@@ -63,6 +71,8 @@ function handleCardClick(cardEl) {
 
 function compare(selectedCard1, selectedCard2) {
     if (deckOfGameCards[selectedCard2.id] !== deckOfGameCards[selectedCard1.id]) {
+        cantClick = true
+        setTimeout(() => cantClick = false, 2500)
         lives -= 1
         setTimeout(() => selectedCard1.className = "card large back-easy", 2500)
         setTimeout(() => selectedCard2.className = "card large back-easy", 2500)        
@@ -94,8 +104,8 @@ function render() {
     currentScoreEl.textContent = "Score: " + score
     currentLivesEl.textContent = "Lives: " + lives
     }
-
 /*----------------------------- Event Listeners -----------------------------*/
 cardEls.forEach((cardEl) => {
     cardEl.addEventListener("click", event => {handleCardClick(cardEl)})    
 })
+resetButtonEl.addEventListener("click", init)
