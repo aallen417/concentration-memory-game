@@ -33,6 +33,8 @@
 * #### [Widowmaker background image](https://d15f34w2p8l1cc.cloudfront.net/overwatch/a714f1cb33cc91c6b5b3e89ffe7e325b99e7c89cc8e8feced594f81305147efe.png)
 * #### [Flip animation](https://animate.style/)
 
+* ### [Pseudocode](https://docs.google.com/document/d/1DyPL6mEXw6C_zFAIIFVZbJvddkCSplMSBNN0b_4Guy0/edit)
+
 ## Technologies used:
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
