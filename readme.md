@@ -32,4 +32,8 @@
 ## Technologies used:
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
+## Future plans:
 
+* ### I will introduce a difficulty selection to change the amount of available matches.
+* ### I plan to return add several themed features that make this game more unique. These features will draw inspiration from the different abilities heroes have in the game. You would be able to select one of these abilities for use when playing.
+* * ### An example is like Tracer's Recall ability in Overwatch could be used to implement something to the effect of an undo button.
